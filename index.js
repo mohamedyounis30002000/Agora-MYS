@@ -7,9 +7,12 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/generateToken', (req, res) => {
     const appID = '11efb81da2e0405cb0f4b1c159b66e0d';
-    const appCertificate = 'd27f2a3af1ff4fc9b58e5be80752942c';
-    const channelName = req.query.channelName;
-    const uid = req.query.uid;
+    const appCertificate = '76bf6543723d4963a0d33c2a25999da2';
+    //const channelName = req.query.channelName;
+    //const uid = req.query.uid;
+    const channelName = "myse";
+    const uid = 2882341273;
+    const account = "2882341273";
     const role = RtcRole.PUBLISHER ; // Use RtcRole.SUBSCRIBER for audience role //PUBLISHER
 
     const expirationTimeInSeconds = 3600;
