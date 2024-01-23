@@ -15,7 +15,7 @@ app.get('/generateToken', (req, res) => {
     const account = "2882341273";
     const role = RtcRole.PUBLISHER ; // Use RtcRole.SUBSCRIBER for audience role //PUBLISHER
 
-    const expirationTimeInSeconds = 3600;
+    const expirationTimeInSeconds = 3600 *24 ;
 
     const key = RtcTokenBuilder.buildTokenWithUid(
         appID,
